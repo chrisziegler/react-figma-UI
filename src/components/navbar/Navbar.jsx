@@ -10,7 +10,6 @@ const Menu = () => (
       <a href="#home">Home</a>
     </p>
     <p>
-      {' '}
       <a href="#wgpt3">What is GPT3</a>
     </p>
     <p>
@@ -43,17 +42,9 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
+          <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
         ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(true)}
-          />
+          <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
         )}
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
